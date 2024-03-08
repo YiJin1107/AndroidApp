@@ -17,7 +17,7 @@
         android:id="@+id/login_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="沙壁YSP"
+        android:text="欢迎来到我的APP"
         android:textSize="24sp" />
 
     <EditText
