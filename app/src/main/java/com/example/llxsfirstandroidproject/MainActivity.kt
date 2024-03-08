@@ -1,5 +1,6 @@
 package com.example.llxsfirstandroidproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val loginText:TextView = findViewById(R.id.login_text_view) // 寻找id，R:resource存放了所有视图的id
         val loginButton: Button = findViewById(R.id.login_button)
         val loginName : EditText = findViewById(R.id.login_name)
+        val jumpButton : Button = findViewById(R.id.second_activity_button)
 
         // 调用按钮触发函数并显示
         loginButton.setOnClickListener {
@@ -28,5 +30,14 @@ class MainActivity : AppCompatActivity() {
             loginText.text = loginName.text
             loginText.setText(loginName.text)
          }
+
+        // 跳转
+        jumpButton.setOnClickListener {
+            // 显示跳转 快递包裹 (自己 ; 目标) 适用于应用内部跳转
+            val intent : Intent = Intent(this,SecondActivity::class.java)
+            // 传递
+            startActivity(intent)
+        }
+
     }
 }

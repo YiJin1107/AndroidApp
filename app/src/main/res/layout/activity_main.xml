@@ -17,7 +17,7 @@
         android:id="@+id/login_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="欢迎来到我的APP"
+        android:text="欢迎来到我的APP~"
         android:textSize="24sp" />
 
     <EditText
@@ -30,6 +30,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="确认" />
+    <Button
+        android:id="@+id/second_activity_button"
+        android:text="跳转"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
 <!--框架结束-->
